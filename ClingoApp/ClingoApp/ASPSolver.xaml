@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage x:Name="tabMain" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClingoApp.ASPSolver">
+  <!--Pages can be added as references or inline-->
+
+  <ContentPage x:Name="tabASPInput" Title="Input">
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Button x:Name="btnEvaluate" Grid.Row="0" VerticalOptions="Start" Text="Evaluate" Clicked="btnEvaluate_Clicked" />
+      <Editor x:Name="ediASPInput" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+      <WebView x:Name="wbvSolver" Navigated="wbvSolver_Navigated" IsVisible="false"/>
+    </Grid>
+  </ContentPage>
+<!--
+  <ContentPage Title="Extraction">
+    <Button x:Name="htnExtract" Text="Extract Answer Sets" Clicked="Extract_Clicked" />
+  </ContentPage>
+-->
+  <ContentPage x:Name="tabAnswerSets" Title="Answer Sets">
+    <ListView x:Name="lstAnswerSets">
+      <ListView.ItemsSource>
+        <x:Array Type="{x:Type x:String}"/>
+      </ListView.ItemsSource>
+    </ListView>
+  </ContentPage>
+
+  <!--  
+  <ContentPage Title="Tab 3" xmlns:views="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+      <StackLayout>
+          <views:SKCanvasView x:Name="canv" PaintSurface="SKCanvasView_PaintSurface" />
+          <Button Text="draw" Clicked="Button_Clicked_2" />
+      </StackLayout>
+  </ContentPage>
+-->
+</TabbedPage>
