@@ -6,7 +6,7 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label x:Name="output" Text="Welcome to clingo!" 
+        <Label x:Name="output" Text="Welcome to Clingo for mobile devices!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 

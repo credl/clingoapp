@@ -13,20 +13,7 @@ namespace ClingoApp
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
-
-//            ThreadPool.QueueUserWorkItem(BackgroundThread);
         }
-
-        /*
-        BackgroundThread()
-        {
-            System.Threading.Thread.Sleep(5000);
-            // When the download is complete, notify the UI
-            MonoTouch.Foundation.NSObject.BeginInvokeOnMainThread(delegate {
-                status.Text = "Download has been completed";
-            });
-        }
-        */
 
         protected override void OnStart()
         {

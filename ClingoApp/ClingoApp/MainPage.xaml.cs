@@ -18,18 +18,10 @@ namespace ClingoApp
             InitializeComponent();
         }
 
-        /*
-        void OnButtonClicked(object sender, EventArgs args)
-        {
-            output.Text = "clicked: " + add(4, 5);
-
-        }
-        */
-
         void btnStartSolver_Clicked(object sender, EventArgs args)
         {
-            ASPSolver tp1 = new ASPSolver();
-            this.Navigation.PushAsync(tp1);
+            ASPSolver solverPage = new ASPSolver();
+            this.Navigation.PushAsync(solverPage);
 
         }
     }
