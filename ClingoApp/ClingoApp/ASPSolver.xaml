@@ -29,12 +29,10 @@
         </Grid>
     </ContentPage>
     <ContentPage x:Name="tabAnswerSets" Title="Answer Sets">
-        <ScrollView Orientation="Horizontal">
-            <ListView x:Name="lstAnswerSets">
-                <ListView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}"/>
-                </ListView.ItemsSource>
-            </ListView>
-        </ScrollView>
+        <ListView x:Name="lstAnswerSets" ItemTapped="LstAnswerSets_ItemTapped">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}"/>
+            </ListView.ItemsSource>
+        </ListView>
     </ContentPage>
 </TabbedPage>

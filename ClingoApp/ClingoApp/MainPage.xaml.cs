@@ -16,13 +16,15 @@ namespace ClingoApp
         public MainPage()
         {
             InitializeComponent();
+
+            //imgRubikLogo.Source = ImageSource.FromResource("rubik.png");
         }
 
         void btnStartSolver_Clicked(object sender, EventArgs args)
         {
             ASPSolver solverPage = new ASPSolver();
-            this.Navigation.PushAsync(solverPage);
-
+            App.Current.MainPage = new NavigationPage(solverPage);
+            //this.Navigation.PushAsync(solverPage);
         }
     }
 }

@@ -10,6 +10,8 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
+        <Image x:Name="imgRubikLogo" Aspect="AspectFit" Source="rubik.png"/>
+
         <Button x:Name="htnStartSolver"
                 Text="Start solver"
                 VerticalOptions="CenterAndExpand"

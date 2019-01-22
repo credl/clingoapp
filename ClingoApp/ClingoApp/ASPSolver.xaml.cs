@@ -69,5 +69,11 @@ namespace ClingoApp
                 onSolverInitialized();
             }
         }
+
+        private void LstAnswerSets_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            AnswerSetView answerSetViewPage = new AnswerSetView(e.Item.ToString());
+            this.Navigation.PushAsync(answerSetViewPage);
+        }
     }
 }
