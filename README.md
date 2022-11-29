@@ -5,7 +5,9 @@ This Xamarin-based App runs Clingo on Anroid and iOS devices based on a compilat
 
 # Copyright info
 
-clingoapp uses a compiled version of clingo, which is distributed under the following licence and copyright info:
+clingoapp was developed by Christoph Redl.
+
+The app uses contains a compiled version of clingo, which is distributed under the following licence and copyright info:
 
 ## The MIT License (MIT)
 
